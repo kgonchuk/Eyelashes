@@ -294,18 +294,15 @@ a {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
   margin-bottom: 60px;
 }
 .about-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
   margin-bottom: 30px;
 }
 .about-img {
+  margin: 0 auto;
   width: 300px;
   border-radius: 12px;
 }
@@ -313,9 +310,10 @@ a {
 .about-item {
   display: flex;
   justify-content: start;
-  gap: 30px;
+  gap: 10px;
   margin-bottom: 30px;
-  font-size: 26px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .about_item_order {
@@ -337,30 +335,10 @@ a {
 
   color: var(--secondary-text-color);
 }
-
-.about-points_list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.points-container {
-  width: 150px;
-  height: 150px;
-  border: 1px solid var(--secondary-text-color);
-  border-radius: 50%;
-  text-align: center;
-  padding: 15px;
-}
-
-.points_item_title {
-  margin-top: 20%;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 600;
-}
-.points_item_text {
-  font-size: 16px;
+@media screen and (max-width: 767px) {
+  .about-points {
+    display: none;
+  }
 }
 .scroll-to-top {
   position: relative;
@@ -422,7 +400,7 @@ a {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
   margin-bottom: 120px;
   text-transform: uppercase;
@@ -431,33 +409,22 @@ a {
   padding: 0 60px;
   position: relative;
 }
-.prices-list {
-  display: flex;
-  justify-content: center;
 
-  gap: 60px;
-  /* width: calc((100% - 60px) / 3); */
-}
 .prices-item {
-  padding: 100px 40px 40px;
+  padding: 20px 20px 20px;
   border: 1px solid var(--accent);
   border-radius: 12px;
   max-width: 200px;
+  margin-bottom: 20px;
 }
-.prices-img {
-  position: absolute;
-  top: -80px;
-  /* left: 185px; */
-  border-radius: 12px;
-}
+
 .prices-item-title {
   font-family: "Raleway";
   font-size: 16px;
   text-align: center;
   margin-bottom: 20px;
 }
-.prices-item-list {
-}
+
 .prices-list-wrap {
   height: 250px;
 }
