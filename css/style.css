@@ -51,16 +51,16 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid tomato; */
+  margin-left: auto;
+  margin-right: auto;
 }
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  outline: 2px red;
 }
 .visually-hidden {
   position: absolute;
@@ -78,32 +78,129 @@ a {
   text-decoration: none;
   /* color: #6c6767; */
 }
+
 /* ////////////////////////// */
 
 .header {
   background-color: var(--font-color);
+  max-width: 100%;
 }
 .container-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .header-logo {
   font-weight: 600;
   font-size: 40px;
   color: var(--text-color);
 }
+.header-text {
+  text-transform: uppercase;
+  font-size: 14px;
+}
 .nav-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  display: none;
 }
 
-.nav-link-social-icon {
+.header-list {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+
+/* ========mobile header====== */
+.header-mobile-menu-open {
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  border: 0;
+  margin-left: auto;
+}
+.header-mobile-menu-open-icon {
+  fill: var(--button-color);
+}
+.header-mobile-menu-open:hover,
+.header-mobile-menu-open:focus {
+  color: var(--accent);
+}
+
+.header-sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--button-color);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translateX(100%);
+  transition-property: opacity, visibility, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-sidebar.is-hidden {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+.header-sidebar-close {
+  fill: var(--second-font-color);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-sidebar-close:hover,
+.header-sidebar-close:focus {
+  fill: var(--accent-font-color);
+}
+
+.header-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 136px;
+  margin-left: 50px;
+}
+.header-sidebar-item {
+  font-size: 22px;
+}
+.header-sidebar-item-link {
+  color: var(--text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-sidebar-item-link:hover,
+.header-sidebar-item-link:focus {
+  color: var(--accent-font-color);
+}
+.nav-link-modal {
+  display: flex;
+  margin-left: 21.83px;
+  margin-top: auto;
+  margin-bottom: 21.85px;
+}
+.nav-link-social-icon-modal {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   border-radius: 50px;
   padding: 5px;
   text-align: center;
@@ -113,45 +210,13 @@ a {
   fill: var(--accent-font-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link-social-icon:hover,
-.nav-link-social-icon:focus {
-  background-color: #d67d7d;
+.nav-link-social-icon-modal:hover,
+.nav-link-social-icon-modal:focus {
+  fill: var(--button-color);
+  background-color: var(--accent-font-color);
 }
 
-.header-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.header-item {
-  font-size: 22px;
-  color: var(--text-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-item:hover,
-.header-item:focus {
-  color: #d67d7d;
-}
-/* .header__link--active {
-  color: var(--accent-color);
-}
-
-.header__link--active::after {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: var(--accent-color);
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-} */
 /* ===========HERO============= */
-.hero-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: centre;
-}
 
 .hero {
   background-color: var(--font-color);
@@ -167,18 +232,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-info {
-  width: 50%;
-  margin-top: 80px;
-  /* padding: 208px 128px 208px 31px; */
-}
-.hero-nav {
-  width: 50%;
-  margin-top: 80px;
-  /* padding: 208px 128px 208px 31px; */
-}
-.hero-nav-list {
-}
+
 .hero-nav-item {
   display: flex;
   align-items: center;
@@ -186,8 +240,7 @@ a {
   gap: 50px;
   font-family: "Raleway";
   color: white;
-  font-size: 24px;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 .hero-social-link {
   display: flex;
@@ -196,23 +249,23 @@ a {
   border-radius: 50px;
   padding: 5px;
   text-align: center;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: var(--button-color);
   fill: var(--accent-font-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-title {
-  font-size: 66px;
+  font-size: 56px;
   text-transform: uppercase;
-  color: white;
-  margin-bottom: 26px;
+  color: var(--accent-font-color);
+  margin-bottom: 20px;
 }
 .hero-text {
   font-family: "Raleway";
-  color: white;
-  font-size: 24px;
-  margin-bottom: 26px;
+  color: var(--accent-font-color);
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 .hero-btn {
   color: white;
@@ -223,11 +276,9 @@ a {
   border-radius: 24px;
   text-transform: uppercase;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
-.hero-img {
-  border-radius: 12px;
-  width: 600px;
-}
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #d67d7d;
@@ -258,8 +309,7 @@ a {
   width: 300px;
   border-radius: 12px;
 }
-.about-list {
-}
+
 .about-item {
   display: flex;
   justify-content: start;
@@ -284,12 +334,10 @@ a {
   font-weight: 600;
   font-size: 16px;
   text-align: center;
-  /* position: absolute; */
-  /* top: 5px; */
+
   color: var(--secondary-text-color);
 }
-.about-points {
-}
+
 .about-points_list {
   display: flex;
   align-items: center;
@@ -303,8 +351,7 @@ a {
   text-align: center;
   padding: 15px;
 }
-.about-points_item {
-}
+
 .points_item_title {
   margin-top: 20%;
   margin-bottom: 8px;

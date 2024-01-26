@@ -30,41 +30,165 @@
       href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Raleway:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-   
-    <link rel="stylesheet" href="./css/style.css" />
-    
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
   <body>
-    <link rel="import" href="/partials/header.html">
+    <header class="section header">
+      <div class="container-header container">
+        <nav class="header-nav">
+          <a href="/" class="header-logo"
+            ><h2 class="header-title">Ільнара Аідінова</h2>
+
+            <p class="header-text">майстер бровист</p>
+            <img src="" />
+          </a>
+
+          <ul class="header-list">
+            <li>
+              <a href="#about" class="header-item header__link--active"
+                >Про мене</a
+              >
+            </li>
+            <li>
+              <a href="#prices" class="header-item header__link--active"
+                >Послуги і ціни</a
+              >
+            </li>
+            <li>
+              <a href="#contacts" class="header-item header__link--active"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="header-mobile-menu-open" data-modal-open>
+          <svg class="header-mobile-menu-open-icon" width="28" height="28">
+            <use href="/img/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <ul class="nav-link">
+          <li class="nav-link-item">
+            <a href="" class="nav-link-social-icon">
+              <svg class="social-link" width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link-social-icon">
+              <svg class="social-link" width="26" height="26">
+                <use href="./img/symbol-defs.svg#icon-viber"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link-social-icon">
+              <svg class="social-link" width="26" height="26">
+                <use href="./img/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link-social-icon">
+              <svg class="social-link" width="26" height="26">
+                <use href="./img/symbol-defs.svg#icon-phone-call"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-sidebar" data-modal>
+        <button class="header-sidebar-link" data-modal-close>
+          <svg class="header-sidebar-close">
+            <use href="/img/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="header-sidebar-list">
+          <li class="header-sidebar-item">
+            <a href="index.html" class="header-sidebar-item-link">На головну</a>
+          </li>
+          <li class="header-sidebar-item">
+            <a href="#about" class="header-sidebar-item-link">Про мене</a>
+          </li>
+          <li class="header-sidebar-item">
+            <a href="#prices" class="header-sidebar-item-link"
+              >Послуги і ціни</a
+            >
+          </li>
+          <li class="header-sidebar-item">
+            <a href="#contacts" class="header-sidebar-item-link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="nav-link-modal">
+          <li class="nav-link-item-modal">
+            <a href="#" class="nav-link-social-icon-modal">
+              <svg class="social-link-modal" width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link-social-icon-modal">
+              <svg class="social-link-modal" width="26" height="26">
+                <use href="./img/symbol-defs.svg#icon-viber"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link-social-icon-modal">
+              <svg class="social-link-modal" width="26" height="26">
+                <use href="./img/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link-social-icon-modal">
+              <svg class="social-link-modal" width="26" height="26">
+                <use href="./img/symbol-defs.svg#icon-phone-call"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <main>
       <section class="section hero">
-        <div class="container hero-container">
-          <div class="hero-info">
-            <h1 class="hero-title">Красиві брови без зусиль!</h1>
-            <p class="hero-text">
-              Послуги з моделювання, корекції та фарбування брів у нашому салоні
-              - ваше вирішення проблеми!
-            </p>
-            <button class="hero-btn">Записатися</button>
-          </div>
-          <div class="hero-nav">
-            <ul class="hero-nav-list">
-              <li class="hero-nav-item">
-                <svg class="hero-social-link" width="50" height="50">
-                  <use href="./img/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                +38 (067) 584-13-67
-              </li>
-              <li class="hero-nav-item">
-                <svg class="hero-social-link" width="50" height="50">
-                  <use href="./img/symbol-defs.svg#icon-map-pin"></use>
-                </svg>
-                Київ, Вишневе, Боярка, Софіївська Борщагівка
-              </li>
-            </ul>
+        <div class="container">
+          <div class="hero-container">
+            <div class="hero-info">
+              <h1 class="hero-title">Красиві брови без зусиль!</h1>
+              <p class="hero-text">
+                Послуги з моделювання, корекції та фарбування брів у нашому
+                салоні - ваше вирішення проблеми!
+              </p>
+              <button class="hero-btn">Записатися</button>
+            </div>
+            <div class="hero-nav">
+              <ul class="hero-nav-list">
+                <li class="hero-nav-item">
+                  <svg class="hero-social-link" width="50" height="50">
+                    <use href="./img/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 (067) 584-13-67
+                </li>
+                <li class="hero-nav-item">
+                  <svg class="hero-social-link" width="50" height="50">
+                    <use href="./img/symbol-defs.svg#icon-map-pin"></use>
+                  </svg>
+                  Київ, Вишневе, Боярка, Софіївська Борщагівка
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -78,6 +202,7 @@
               src="./img//beautiful-young-woman-in-a-black-shirt-doing-makeup_240347-23.jpg"
               alt="its me"
             />
+
             <ul class="about-list">
               <li class="about-item">
                 <div class="about_item_order">
@@ -140,15 +265,16 @@
             </ul>
           </div>
         </div>
-        <!-- <button title="Back to top" class="scroll">
-          <span class="btn-up btn-up-position btn-up-style arrow-up glyphicon glyphicon-chevron-up">⇧</span>
-      </button>   -->
+
         <div class="scroll-to-top scroll">
-          <span class="btn-up btn-up-position btn-up-style arrow-up glyphicon glyphicon-chevron-up">⇧</span>
+          <span
+            class="btn-up btn-up-position btn-up-style arrow-up glyphicon glyphicon-chevron-up"
+            >⇧</span
+          >
         </div>
       </section>
 
-      <section class="section prices" id="prices">
+      <!-- <section class="section prices" id="prices">
         <div class="container">
           <h2 class="prices-title">Послуги та ціни</h2>
           <div class="prices-info">
@@ -243,9 +369,9 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section advantages">
+      <!-- <section class="section advantages">
         <div class="container">
           <h2 class="advantages-title">Переваги</h2>
           <div class="advantages-info-block1">
@@ -348,11 +474,9 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section material"><div class="container"></div></section>
-
-      <section class="section gallery">
+      <!-- <section class="section gallery">
         <div class="container">
           <h2 class="gallery-title">Галерея</h2>
           <div class="box">
@@ -422,11 +546,9 @@
             </a>
           </div>
         </div>
-      </section>
+      </section> -->
 
-
-     
-        <section class="section comment" >
+      <!-- <section class="section comment" >
           <div class="container">
           <h2 class="comment-tittle">Відгуки</h2>
           <div class="slider multiple-items">
@@ -770,9 +892,9 @@
           </div>
         </div>
         <button class="comment-btn" type="button">Залишити відгук</button>
-        </section>
-    
-      <section class="section record">
+        </section> -->
+
+      <!-- <section class="section record">
         <div class="container">
           <h2 class="record-title">Запис на послуги</h2>
           <div class="record-wrap">
@@ -826,9 +948,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer>
+    <!-- <footer>
       <section class="section footer" id="contacts">
         <div class="container">
           <div class="container container-footer">
@@ -882,11 +1004,19 @@
           </div>
         </div>
       </section>
-    </footer>
+    </footer> -->
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="./js/mobile.js"></script>
     <script src="./js//slick.js"></script>
     <script src="./js/scroll.js"></script>
   </body>

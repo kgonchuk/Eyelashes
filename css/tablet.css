@@ -1,0 +1,11 @@
+/* ======HEADER======= */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .header-sidebar {
+    padding-left: 32px;
+    padding-bottom: 24px;
+    width: 290px;
+  }
+}
