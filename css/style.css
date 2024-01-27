@@ -335,11 +335,7 @@ a {
 
   color: var(--secondary-text-color);
 }
-@media screen and (max-width: 767px) {
-  .about-points {
-    display: none;
-  }
-}
+
 .scroll-to-top {
   position: relative;
 }
@@ -494,15 +490,7 @@ a {
   text-transform: uppercase;
   position: relative;
 }
-.advantages-info-block1 {
-  display: flex;
 
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-.advantages-info-block1-list {
-}
 .advantages-info-block1-item {
   display: flex;
 
@@ -523,12 +511,7 @@ a {
 .advantages-img1 {
   border-radius: 12px;
 }
-.advantages-info-block2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
+
 .advantages-img2 {
   border-radius: 12px;
 }
