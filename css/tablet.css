@@ -50,8 +50,10 @@
   .prices-list {
     display: flex;
     justify-content: center;
-
-    gap: 60px;
+    gap: 20px;
+  }
+  .prices-item {
+    max-width: 180px;
   }
   .price-container {
     margin-top: 40px;
@@ -63,6 +65,9 @@
   }
   .prices-item {
     padding: 100px 40px 40px;
+  }
+  .prices-item {
+    padding: 100px 20px 40px;
   }
   .advantages-img2 {
     max-width: 720px;
@@ -114,5 +119,10 @@
   }
   .record-input {
     width: 200px;
+  }
+  .container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

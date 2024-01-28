@@ -13,6 +13,15 @@
   .header-button {
     display: none;
   }
+  .header-title {
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--text-color);
+  }
+  .header-text {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
   .nav-link {
     display: flex;
     align-items: center;
@@ -88,6 +97,19 @@
   .price-container {
     margin-bottom: 40px;
   }
+  .prices-list {
+    gap: 60px;
+  }
+  .prices-item {
+    padding: 100px 40px 40px;
+  }
+  .prices-item {
+    padding: 20px 20px 20px;
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
   .advantages-title {
     font-size: 30px;
   }
@@ -110,7 +132,12 @@
     justify-content: center;
     gap: 30px;
   }
-
+  .advantages-info-block1 {
+    margin-bottom: 0;
+  }
+  .advantages-info-block2-list {
+    margin-top: 0;
+  }
   .advantages-list-title {
     font-size: 16px;
   }
@@ -124,12 +151,16 @@
   .advantages-img2 {
     max-width: 400px;
   }
+  .advantages-img1 {
+    max-width: 400px;
+    border-radius: 12px;
+  }
   .box {
     padding: 15px;
     display: grid;
     grid-template-rows: 350px 350px;
     grid-template-columns: 250px 250px 250px 250px;
-    gap: 60px;
+    gap: 45px;
     height: 100%;
     grid-auto-flow: dense;
     align-items: center;
@@ -171,11 +202,11 @@
   .comment-tittle {
     font-size: 30px;
   }
-  
+
   .record-wrap {
     gap: 100px;
   }
-  
+
   .record-info-title {
     font-size: 20px;
   }
@@ -184,7 +215,16 @@
   }
   .input-wrap {
     font-size: 16px;
-  } */
+  }
+  .footer-logo-text {
+    font-size: 20px;
+  }
+  .footer-logo-title {
+    font-size: 40px;
+  }
+  .footer-nav-item {
+    font-size: 20px;
+  }
 }
 .container-header {
   display: flex;
@@ -373,3 +413,18 @@
 /* =====COMMENT===== */
 
 /* =====RECORD====== */
+
+/* =======FOOOTER======= */
+
+.footer-nav-list-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-nav-list {
+  /* font-family: "Raleway";
+  font-size: 15px;
+  font-weight: 500; */
+}
