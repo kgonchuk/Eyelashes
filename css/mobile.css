@@ -2,6 +2,11 @@
   .container {
     max-width: 448px;
   }
+  .advantages-img2 {
+    border-radius: 12px;
+    max-width: 448px;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 767px) {
   .about-points {

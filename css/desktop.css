@@ -4,6 +4,10 @@
   .container {
     max-width: 1200px;
   }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .header-sidebar,
   .header-mobile-menu-open,
   .header-button {
@@ -100,6 +104,87 @@
     justify-content: center;
     gap: 30px;
   }
+  .advantages-info-block2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .advantages-list-title {
+    font-size: 16px;
+  }
+
+  .advantages-list-text {
+    font-size: 12px;
+  }
+  .advantages-order-text {
+    font-size: 16px;
+  }
+  .advantages-img2 {
+    max-width: 400px;
+  }
+  .box {
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 350px 350px;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 60px;
+    height: 100%;
+    grid-auto-flow: dense;
+    align-items: center;
+  }
+
+  .item-1 {
+    grid-row-start: 1;
+    grid-column-start: 4;
+
+    grid-row-end: 3;
+    grid-column-end: 5;
+    border-radius: 24px;
+  }
+  .item-2 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 2;
+    grid-column-end: 3;
+  }
+  .item-3 {
+    grid-row: 2/3;
+  }
+  .photo {
+    max-width: 570px;
+  }
+  .photo-st {
+    max-width: 280px;
+  }
+  .gallery-title {
+    font-size: 30px;
+  }
+  .gallery-btn-text {
+    font-size: 25px;
+  }
+  .gallery-link {
+    font-size: 25px;
+  }
+  .comment-tittle {
+    font-size: 30px;
+  }
+  
+  .record-wrap {
+    gap: 100px;
+  }
+  
+  .record-info-title {
+    font-size: 20px;
+  }
+  .info-text {
+    font-size: 15px;
+  }
+  .input-wrap {
+    font-size: 16px;
+  } */
 }
 .container-header {
   display: flex;
@@ -283,48 +368,8 @@
 }
 /* =========ADVANTAGE========== */
 
-.advantages-list-title {
-  font-family: "Raleway";
-  font-size: 16px;
-  margin-bottom: 12px;
-}
-.advantages-list-text {
-  font-family: "Raleway";
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-.advantages-img1 {
-  border-radius: 12px;
-}
-.advantages-info-block2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-.advantages-img2 {
-  border-radius: 12px;
-}
-.advantages-order {
-  width: 20px;
-  height: 10px;
-  border: 1px solid var(--secondary-text-color);
-  border-radius: 50%;
-  text-align: center;
-  padding: 10px;
-}
-.advantages-info-block2-item {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  position: relative;
-}
-.advantages-order-text {
-  font-family: "Raleway";
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  position: absolute;
-  top: 5px;
-  color: var(--secondary-text-color);
-}
+/* ========GALLERY====== */
+
+/* =====COMMENT===== */
+
+/* =====RECORD====== */
