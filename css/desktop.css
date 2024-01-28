@@ -130,14 +130,14 @@
     justify-content: center;
     gap: 30px;
   }
-  .advantages-info-block2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+  .advantages-info-block2-item {
+    gap: 15px;
   }
   .advantages-info-block1 {
     margin-bottom: 0;
+  }
+  .advantages-info-block1-item {
+    gap: 15px;
   }
   .advantages-info-block2-list {
     margin-top: 0;
